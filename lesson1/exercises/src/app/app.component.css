@@ -1,0 +1,16 @@
+hr{
+    height: 3px;
+    background-color:darkslateblue;
+}
+
+#firstCol{
+    border-right: medium dashed;
+}
+
+#secondCol{
+    border-right: medium dashed;
+}
+
+/* .col-3{
+    border-right: 2px dashed;
+} */
