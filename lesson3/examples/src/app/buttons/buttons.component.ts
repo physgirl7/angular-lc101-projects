@@ -5,12 +5,23 @@ import { Component, OnInit } from '@angular/core';
    templateUrl: './buttons.component.html',
    styleUrls: ['./buttons.component.css']
 })
+
 export class ButtonsComponent implements OnInit {
    buttonHeading: string = "Buttons"
-   inactive: boolean = false;
+   inactiveGold: boolean = false;
+   inactiveSilver: boolean = false;
+   inactiveCopper: boolean = false;
 
    constructor() { }
 
    ngOnInit() { }
 
+   buttonActivate (goldState: boolean, silverState: boolean, copperState: boolean){
+      if(goldState === true || silverState === true || copperState === true){
+         this.inactiveGold = false;
+         this.inactiveSilver = false;
+         this.inactiveCopper = false;
+      }
 }
+}
+
